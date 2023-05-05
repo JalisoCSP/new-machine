@@ -1,10 +1,20 @@
-# Generate new SSH key
+# Notes from setting up a new machine
+
+Happy to take tips on how to do this a bit more seemlessly!
+
+Check out my personal site: https://craigpetterson.co.uk
+
+Following me on Twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
+
+---
+
+### Generate new SSH key
 
 From Github settings: https://github.com/settings/keys
 
 https://docs.github.com/authentication/connecting-to-github-with-ssh
 
-# Install Homebrew
+### Install Homebrew
 
 Check command at: https://brew.sh/
 
@@ -12,7 +22,7 @@ Check command at: https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-# Clone dotfiles
+### Clone dotfiles
 
 - Got an error here, that could be reviewed
 - Trying to use a git command will suggest installing developer tools, do this
@@ -25,7 +35,7 @@ cd ~/.dotfiles
 rake install
 ```
 
-# Setup list
+### Setup list
 
 * Vim
 * Tmuxinator: https://github.com/tmuxinator/tmuxinator
