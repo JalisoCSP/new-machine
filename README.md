@@ -12,11 +12,12 @@ Happy to take tips on how to do this a bit more seemlessly!
 
 From Github settings: https://github.com/settings/keys
 
-https://docs.github.com/authentication/connecting-to-github-with-ssh
+* Follow these steps from Github: https://docs.github.com/authentication/connecting-to-github-with-ssh
+* Add public key to authorized keys in dotfiles: https://github.com/JalisoCSP/dotfiles/blob/master/ssh/authorized_keys.pub
 
 ### Install Homebrew
 
-Check command at: https://brew.sh/
+Double check command at: https://brew.sh/
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -24,8 +25,7 @@ Check command at: https://brew.sh/
 
 ### Clone dotfiles
 
-- Got an error here, that could be reviewed
-- Trying to use a git command will suggest installing developer tools, do this
+* Trying to use a git command will suggest installing developer tools, do this
 
 Copy aliases, vim & tmux settings, etc
 
