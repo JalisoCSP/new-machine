@@ -8,6 +8,8 @@ Happy to take tips on how to do this a bit more seemlessly!
 
 ---
 
+## Development Setup
+
 ### Generate new SSH key
 
 From Github settings: https://github.com/settings/keys
@@ -37,8 +39,12 @@ rake install
 
 ### Setup list
 
-* Vim
-* Tmuxinator: https://github.com/tmuxinator/tmuxinator
+* Setting up `rbenv` first, otherwise there is `gem install` issues with write permissions
+
+```
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
+```
 
 #### Rbenv
 
@@ -46,6 +52,41 @@ https://github.com/rbenv/rbenv
 
 ```
 brew install rbenv ruby-build
+rbenv install <version>
+rbenv global <version>
 ```
 
-No need to add `eval "$(rbenv init - zsh)"` to ~/.zshrc, that will already be done with the dotfiles
+* No need to add `eval "$(rbenv init - zsh)"` to ~/.zshrc, that will already be done with the dotfiles
+* Make sure to restart terminal after this point (just fully close and reopen)
+
+#### Vim
+
+Nothing to do? Dotfiles take care of my usual set up
+
+#### Tmuxinator
+
+https://github.com/tmuxinator/tmuxinator
+
+```
+gem install tmuxinator
+brew install tmuxinator
+```
+
+TODO: Setup tmux project in dotfiles
+
+#### Bundler
+
+```
+gem install bundler
+```
+
+#### NVM
+
+????
+
+### Project setup
+
+TODO:
+* Pull a project down
+* Steps to get server up and running
+* Thinking: postgresql, redis, etc
