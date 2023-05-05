@@ -2,9 +2,9 @@
 
 Happy to take tips on how to do this a bit more seemlessly!
 
-Check out my personal site: https://craigpetterson.co.uk
-
-Following me on Twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
+* Following me on Twitter: [@JalisoCSP](https://twitter.com/JalisoCSP)
+* Check out my personal site: https://craigpetterson.co.uk
+* Check out my dotfiles: https://github.com/JalisoCSP/dotfiles
 
 ---
 
@@ -39,4 +39,13 @@ rake install
 
 * Vim
 * Tmuxinator: https://github.com/tmuxinator/tmuxinator
-* Rbenv: https://github.com/rbenv/rbenv
+
+#### Rbenv
+
+https://github.com/rbenv/rbenv
+
+```
+brew install rbenv ruby-build
+```
+
+No need to add `eval "$(rbenv init - zsh)"` to ~/.zshrc, that will already be done with the dotfiles
