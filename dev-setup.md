@@ -34,27 +34,7 @@ cd ~/.dotfiles
 rake install
 ```
 
-### Setup list
-
-* Setting up `rbenv` first, otherwise there are potentially issues with `gem install` write permissions
-
-```
-ERROR:  While executing gem ... (Gem::FilePermissionError)
-    You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
-```
-
-#### Rbenv
-
-https://github.com/rbenv/rbenv
-
-```
-brew install rbenv ruby-build
-rbenv install <version>
-rbenv global <version>
-```
-
-* No need to add `eval "$(rbenv init - zsh)"` to ~/.zshrc, that will already be done with the dotfiles
-* Make sure to restart terminal after this point (just fully close and reopen)
+## Setup list
 
 #### Vim
 
@@ -69,21 +49,80 @@ gem install tmuxinator
 brew install tmuxinator
 ```
 
-TODO: Setup standard tmux project in dotfiles
+**TODO**: Setup standard tmux project in dotfiles
 
-#### Bundler
+### ASDF
+
+https://github.com/asdf-vm/asdf
+
+Following steps from the Getting Started guide: https://asdf-vm.com/guide/getting-started.html
+
+Check they are up to date
+
+Install dependencies:
 
 ```
-gem install bundler
+brew install coreutils curl git gpg gawk
 ```
 
-#### NVM
+Download ASDF:
 
-????
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+```
+
+Symlink to avoid version issues: https://github.com/asdf-vm/asdf/issues/418#issuecomment-454372616
+
+**TODO**: See if this symlink can be added to dotfiles `rake install`
+
+```
+sudo ln -s /usr/local/opt/asdf/libexec/ /usr/local/libexec
+```
+
+* No need to add `$(brew --prefix asdf)/libexec/asdf.sh` to ~/.zshrc, that will already be done with the dotfiles
+* Make sure to restart terminal after this point (just fully close and reopen, rather than messing around with `source`)
+
+**TODO**: Add ~/.asdfrc to dotfiles & symlink
+
+### Ruby
+
+Versions: https://www.ruby-lang.org/en/downloads/releases/
+
+```
+asdf plugin add ruby
+asdf install ruby <version>
+asdf global ruby <version>
+gem update --system
+```
+
+### Node
+
+Versions: https://nodejs.org/en/download/releases
+
+```
+asdf plugin add nodejs
+asdf install nodejs <version>
+asdf global nodejs <version>
+```
+
+### PostgresQL
+
+Versions: https://www.postgresql.org/support/versioning/
+
+```
+brew install postgresql
+brew services start postgresql
+```
+
+#### Standard Gems
+
+```
+gem install bundler rails
+```
 
 # Project setup
 
-TODO:
+**TODO**:
 * Pull a project down
 * Steps to get server up and running
 * Thinking: postgresql, redis, etc
