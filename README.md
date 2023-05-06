@@ -2,7 +2,7 @@
 
 Happy to take tips on how to do this a bit more seemlessly!
 
-* [Development Setup](https://github.com/JalisoCSP/new-machine/blob/0ef32732369c558ca72a35f0713b01693979b2f0/dev-setup.md)
+* [Development Setup](https://github.com/JalisoCSP/new-machine/blob/main/dev-setup.md)
 
 ## More
 
