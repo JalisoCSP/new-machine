@@ -32,9 +32,9 @@ Double check command at: https://brew.sh/
 
 ### Clone dotfiles
 
-* Trying to use a git command will suggest installing developer tools, do this
-
 Copy aliases, vim & tmux settings, etc
+
+* Trying to use a git command will suggest installing developer tools, do this
 
 ```
 git clone https://github.com/JalisoCSP/dotfiles ~/.dotfiles
@@ -44,7 +44,7 @@ rake install
 
 ### Setup list
 
-* Setting up `rbenv` first, otherwise there is `gem install` issues with write permissions
+* Setting up `rbenv` first, otherwise there are potentially issues with `gem install` write permissions
 
 ```
 ERROR:  While executing gem ... (Gem::FilePermissionError)
