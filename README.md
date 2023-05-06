@@ -10,6 +10,11 @@ Happy to take tips on how to do this a bit more seemlessly!
 
 ## Development Setup
 
+### Terminal
+
+* Font size: 14
+* TODO: Review Rosetta option? Not had any issues yet, maybe was only issue with M1 when it was a new release
+
 ### Generate new SSH key
 
 From Github settings: https://github.com/settings/keys
@@ -72,7 +77,7 @@ gem install tmuxinator
 brew install tmuxinator
 ```
 
-TODO: Setup tmux project in dotfiles
+TODO: Setup standard tmux project in dotfiles
 
 #### Bundler
 
