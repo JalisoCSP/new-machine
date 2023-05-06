@@ -82,8 +82,6 @@ sudo ln -s /usr/local/opt/asdf/libexec/ /usr/local/libexec
 * No need to add `$(brew --prefix asdf)/libexec/asdf.sh` to ~/.zshrc, that will already be done with the dotfiles
 * Make sure to restart terminal after this point (just fully close and reopen, rather than messing around with `source`)
 
-**TODO**: Add ~/.asdfrc to dotfiles & symlink
-
 ### Ruby
 
 Versions: https://www.ruby-lang.org/en/downloads/releases/
