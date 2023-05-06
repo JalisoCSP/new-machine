@@ -81,7 +81,7 @@ gem install bundler
 
 ????
 
-### Project setup
+# Project setup
 
 TODO:
 * Pull a project down
