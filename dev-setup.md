@@ -1,5 +1,7 @@
 # Development Setup
 
+* Check out my dotfiles: https://github.com/JalisoCSP/dotfiles
+
 ### Terminal
 
 * Font size: 14
