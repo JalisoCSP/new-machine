@@ -88,8 +88,8 @@ Versions: https://www.ruby-lang.org/en/downloads/releases/
 
 ```
 asdf plugin add ruby
-asdf install ruby <version>
-asdf global ruby <version>
+asdf install ruby latest
+asdf global ruby latest
 gem update --system
 ```
 
@@ -99,8 +99,18 @@ Versions: https://nodejs.org/en/download/releases
 
 ```
 asdf plugin add nodejs
-asdf install nodejs <version>
-asdf global nodejs <version>
+asdf install nodejs latest
+asdf global nodejs latest
+```
+
+### Yarn
+
+Versions: https://github.com/yarnpkg/yarn/releases
+
+```
+asdf plugin-add yarn
+asdf install yarn latest
+asdf global yarn latest
 ```
 
 ### PostgresQL
