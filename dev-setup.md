@@ -108,7 +108,8 @@ asdf global nodejs <version>
 Versions: https://www.postgresql.org/support/versioning/
 
 ```
-brew install postgresql
+brew install libpq
+brew install postgresql # requires libpq
 brew services start postgresql
 ```
 
@@ -117,10 +118,3 @@ brew services start postgresql
 ```
 gem install bundler rails
 ```
-
-# Project setup
-
-**TODO**:
-* Pull a project down
-* Steps to get server up and running
-* Thinking: postgresql, redis, etc
