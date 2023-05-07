@@ -123,7 +123,7 @@ brew install postgresql # requires libpq
 brew services start postgresql
 ```
 
-#### Standard Gems
+### Standard Gems
 
 ```
 gem install bundler rails
