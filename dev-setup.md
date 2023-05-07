@@ -118,8 +118,7 @@ asdf global yarn latest
 Versions: https://www.postgresql.org/support/versioning/
 
 ```
-brew install libpq
-brew install postgresql # requires libpq
+brew install libpq postgresql
 brew services start postgresql
 ```
 
