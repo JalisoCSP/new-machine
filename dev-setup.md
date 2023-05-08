@@ -36,11 +36,40 @@ rake install
 
 ## Setup list
 
-#### Vim
+### Vim packages
 
-Nothing to do? Dotfiles take care of my usual set up
+Nothing to do for VIM directly. Dotfiles take care of my usual set up
 
-#### Tmuxinator
+TODO: dotfiles have these packages already, but they don't "copy across" when cloning. Potentially because the bundles are themselves git repos, the files in the bundles aren’t added to the dotfiles git repo — hence why these folders have arrows on them in Github. For now, we're manually adding them with the following:
+
+**ack.vim:** https://github.com/mileszs/ack.vim
+
+```
+brew install ack
+git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
+```
+
+**Silver Searcher:** https://github.com/ggreer/the_silver_searcher
+
+```
+brew install the_silver_searcher
+```
+
+**ctrlp.vim:** https://github.com/ctrlpvim/ctrlp.vim
+
+```
+mkdir -p ~/.vim/pack/plugins/start
+git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/pack/plugins/start/ctrlp
+```
+
+**vim.rails:** https://github.com/tpope/vim-rails
+
+```
+git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
+vim -u NONE -c "helptags vim-rails/doc" -c q
+```
+
+### Tmuxinator
 
 https://github.com/tmuxinator/tmuxinator
 
