@@ -140,6 +140,14 @@ git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
 vim -u NONE -c "helptags vim-rails/doc" -c q
 ```
 
+### ctags
+
+```
+brew install ctags
+```
+
+Make sure to run `:!ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)` (dotfiles shorthand: `,ct`) in projects
+
 ### Tmuxinator
 
 https://github.com/tmuxinator/tmuxinator
