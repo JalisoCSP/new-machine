@@ -36,25 +36,21 @@ rake install
 
 ### Tab completion
 
-TODO: Add ~/.zsh/ to dotfiles and remove this section
-
 https://oliverspryn.blog/adding-git-completion-to-zsh-60f3b0e7ffbc
 
-```
-# Create the folder structure
-mkdir -p ~/.zsh
-cd ~/.zsh
+TODO: This is in the dotfiles, does it need downloading?
 
+```
 # Download the scripts
-curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+curl -o ~/.dotfiles/zsh/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -o _git ~/.dotfiles/zsh/https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 ```
 
 Following has already been added to ~/.zshrc
 
 ```
-+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-+fpath=(~/.zsh $fpath)
++zstyle ':completion:*:*:git:*' script ~/.dotfiles/zsh/git-completion.bash
++fpath=(~/.dotfiles/zsh $fpath)
 +autoload -Uz compinit && compinit
 ```
 
