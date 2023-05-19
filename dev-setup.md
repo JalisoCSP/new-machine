@@ -49,9 +49,9 @@ curl -o _git ~/.dotfiles/zsh/https://raw.githubusercontent.com/git/git/master/co
 Following has already been added to ~/.zshrc
 
 ```
-+zstyle ':completion:*:*:git:*' script ~/.dotfiles/zsh/git-completion.bash
-+fpath=(~/.dotfiles/zsh $fpath)
-+autoload -Uz compinit && compinit
+zstyle ':completion:*:*:git:*' script ~/.dotfiles/zsh/git-completion.bash
+fpath=(~/.dotfiles/zsh $fpath)
+autoload -Uz compinit && compinit
 ```
 
 ## Setup list
