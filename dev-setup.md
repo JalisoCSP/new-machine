@@ -4,6 +4,8 @@
 
 ### Terminal
 
+I'm currently using a 16" Macbook Pro
+
 * Font size: 14
 * Window size: 200x58
 
