@@ -45,7 +45,7 @@ TODO: This is in the dotfiles, does it need downloading?
 ```
 # Download the scripts
 curl -o ~/.dotfiles/zsh/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-curl -o _git ~/.dotfiles/zsh/https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+curl -o _git ~/.dotfiles/zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 ```
 
 Following has already been added to ~/.zshrc
