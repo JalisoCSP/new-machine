@@ -72,22 +72,11 @@ Install dependencies:
 brew install coreutils curl git gpg gawk
 ```
 
-Download ASDF:
+Install ASDF:
 
 ```
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+brew install asdf
 ```
-
-Symlink to avoid version issues: https://github.com/asdf-vm/asdf/issues/418#issuecomment-454372616
-
-**TODO**: See if this symlink can be added to dotfiles `rake install`
-
-```
-sudo ln -s /usr/local/opt/asdf/libexec/ /usr/local/libexec
-```
-
-* No need to add `$(brew --prefix asdf)/libexec/asdf.sh` to ~/.zshrc, that will already be done with the dotfiles
-* Make sure to restart terminal after this point (just fully close and reopen, rather than messing around with `source`)
 
 ### Ruby
 
