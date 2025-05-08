@@ -151,7 +151,17 @@ git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
 vim -u NONE -c "helptags vim-rails/doc" -c q
 ```
 
+**ripgrep:** https://github.com/BurntSushi/ripgrep
+
+For neovim live_grep (`,s` for me)
+
+```
+brew install ripgrep
+```
+
 ### ctags
+
+For `ctrl+]` file jumps
 
 ```
 brew install ctags
