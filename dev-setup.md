@@ -159,6 +159,16 @@ For neovim live_grep (`,s` for me)
 brew install ripgrep
 ```
 
+**Nerd Font**: (I use "Hack") https://github.com/ryanoasis/nerd-fonts#option-2-homebrew-fonts
+
+For a slightly different font. Standard font is SF Mono, so I'm changing it to Hack Mono, which is a bit tighter together, but gives us icons with neovim.
+
+```
+brew install font-hack-nerd-font
+```
+
+Remember to change the font in terminal settings -> profiles -> font
+
 ### ctags
 
 For `ctrl+]` file jumps
